@@ -302,6 +302,7 @@ iframe {
     border: 1px solid #50b36c;
     border-radius: 8px;
     padding: 50px;
+    box-shadow: 0px 1px 13px #ccc;
 }
 .login-item {
     display: block;
@@ -318,6 +319,7 @@ iframe {
     padding: 10px;
     border-radius: 4px;
     width: 100%;
+    box-shadow: 0px 1px 5px #ccc;
 }
 .forgot-password {
     text-align: right;
