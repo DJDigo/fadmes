@@ -71,6 +71,9 @@ header {
     font-size: 20px;
     padding: 5px 0;
 }
+.header-logo a {
+    color: #58ba74;
+}
 .header-logo img {
     width: 70px;
     display: inline-block;
@@ -289,4 +292,79 @@ iframe {
 }
 .slick-dots li.slick-active button:before {
     background: #50b36c;
+}
+.login {
+    margin: 95px auto 50px;
+    max-width: 600px;
+    padding: 50px 20px;
+}
+.login-wrapper {
+    border: 1px solid #50b36c;
+    border-radius: 8px;
+    padding: 50px;
+}
+.login-item {
+    display: block;
+    padding-bottom: 20px;
+}
+.login-item label {
+    font-size: 16px;
+    display: block;
+    padding-bottom: 10px;
+    color: #333;
+}
+.login-item input {
+    border: 1px solid #50b36c;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+.forgot-password {
+    text-align: right;
+}
+.login-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.login-button button {
+    padding: 10px;
+    border-radius: 4px;
+    background: #50b36c;
+    color: #fff;
+    border: 1px solid #50b36c;
+    width: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+}
+.login-button button:hover {
+    background: #fff;
+    color: #50b36c;
+}
+.error {
+    color: #f00;
+    font-size: 14px;
+    display: block;
+    padding-top: 5px;
+}
+.flash-message-success {
+    background: #74d590;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.flash-message-error {
+    background: #ff6a6a;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
