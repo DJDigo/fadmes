@@ -29,6 +29,9 @@
 	Router::connect('/myprofile', array('controller' => 'pages', 'action' => 'myprofile'));
 	Router::connect('/grades', array('controller' => 'pages', 'action' => 'grades'));
 	Router::connect('/feedback', array('controller' => 'pages', 'action' => 'feedback'));
+
+	Router::connect('/admin/login', array('controller' => 'pages', 'action' => 'admin_login'));
+	Router::connect('/admin/index', array('controller' => 'pages', 'action' => 'admin_index'));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */

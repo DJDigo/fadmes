@@ -93,4 +93,12 @@ class PagesController extends AppController {
 	public function feedback() {
 
 	}
+
+	public function admin_index() {
+		$this->layout = 'admin';
+	}
+	
+	public function admin_login() {
+		$this->layout = false;
+	}
 }
