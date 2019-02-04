@@ -81,4 +81,16 @@ class PagesController extends AppController {
 	public function login() {
 
 	}
+
+	public function myprofile() {
+
+	}
+	
+	public function grades() {
+
+	}
+
+	public function feedback() {
+
+	}
 }

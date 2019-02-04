@@ -17,9 +17,6 @@
                 <input type="password" class="login-input">
                 <span class="error">error-message</span>
             </div>
-            <div class="forgot-password">
-                <a href="">Forgot Password?</a>
-            </div>
             <div class="login-button">
                 <button>Login</button>
             </div>

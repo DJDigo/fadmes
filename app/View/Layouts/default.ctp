@@ -35,6 +35,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->script('jquery-3.1.0.min.js');
 		echo $this->Html->script('aos.js');
 		echo $this->Html->script('slick.min.js');
+		echo $this->Html->script('javascript.js');
 	?>
 </head>
 <body>

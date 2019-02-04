@@ -13,7 +13,7 @@
     </div>
 </div>
 
-<section data-aos="fade-up" data-aos-duration="3000">
+<section id="announcements" data-aos="fade-up" data-aos-duration="3000">
     <div class="section-container">
         <div class="section-container-title">
             <span>Announcements</span>
@@ -115,7 +115,7 @@
     </div>    
 </section>
 
-<section class="section-about-us" data-aos="fade-up" data-aos-duration="1000">
+<section class="section-about-us" id="about-us" data-aos="fade-up" data-aos-duration="1000">
     <div class="section-container">
         <div class="section-container-title section-container-title-aboutus">
             <span>About Us</span>
@@ -154,7 +154,7 @@
 </section>
 
 
-<section data-aos="fade-up" data-aos-duration="2000">
+<section data-aos="fade-up" id="contact-us" data-aos-duration="2000">
     <div class="section-container">
         <div class="section-container-title">
             <span>Contact Us</span>
@@ -169,19 +169,3 @@
         </div>
     </div>    
 </section>
-
-<script>
-    $('#announcement').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        speed: 800,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-    });
-
-    AOS.init({
-        easing: 'ease-in-out-sine'
-    });
-</script>

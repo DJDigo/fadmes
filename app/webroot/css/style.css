@@ -75,7 +75,8 @@ header {
     color: #58ba74;
 }
 .header-logo img {
-    width: 70px;
+    width: 75px;
+    height: 75px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -94,7 +95,7 @@ header {
 
 .navigation-item {
     display: inline-block;
-    margin-right: 8%;
+    margin-right: 6%;
     text-align: center;
     font-size: 16px;
     color: #6d6d6d;
@@ -106,7 +107,7 @@ header {
 .navigation-item:last-child {
     margin-right: 0;
 }
-.navigation-item a {
+.navigation-item .login-button {
     text-decoration: none;
     display: inline-block;
     background: #74d590;
@@ -117,15 +118,22 @@ header {
     border: 1px solid #74d590;
     transition: 0.2s;
 }
+.navigation-item .myprofile {
+    display: block;
+    text-decoration: none;
+    color: #6d6d6d;
+}
+
 .navigation-item a:hover {
     background: #fff;
     color: #6d6d6d;
 }
+.navigation-item .myprofile:hover,
 .navigation-item:hover {
     color: #58ba74;
 }
 .banner {
-    margin-top: 95px;
+    margin-top: 85px;
     background: url('../img/common/banner.png') no-repeat;
     background-size: cover;
     color: #fff;
@@ -258,6 +266,7 @@ iframe {
     border: 2px solid #478c77;
     min-height: 200px;
     margin-right: 5px;
+    border-radius: 5px;
 }
 .announcement-data {
     padding-bottom: 15px;
@@ -369,4 +378,219 @@ iframe {
     border-radius: 5px;
     font-weight: bold;
     margin-bottom: 20px;
+}
+.wrapper {
+    padding: 30px 0;
+    margin: 95px auto 0;
+    max-width: 1170px;
+    font-size: 0;
+}
+.sidebar {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    margin-right: 3%;
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+}
+.sidebar-image {
+    display: block;
+    text-align: center;
+}
+.sidebar-content {
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0px 1px 7px #74d590;
+    min-height: 500px;
+}
+.profile-name {
+    display: block;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+.sidebar-menu {
+    padding: 20px 0;
+}
+.sidebar-menu-link {
+    display: block;
+    padding: 18px 15px;
+    text-decoration: none;
+    color: #5d5757;
+    border-bottom: 1px solid #d2d2d2;
+    font-size: 14px;
+}
+.sidebar-menu-item:first-child .sidebar-menu-link {
+    border-top: 1px solid #d2d2d2;
+}
+.sidebar-menu-link:hover {
+    background: #74d590;
+    color: #fff;
+    transition: 0.2s;
+}
+.sidebar-menu-link--active {
+    background: #74d590;
+    color: #fff;   
+}
+.myprofile-info {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    border-bottom: 2px solid #74d590;
+}
+.main-content {
+    display: inline-block;
+    width: 72%;
+    vertical-align: top;
+    min-height: 500px;
+    box-shadow: 0px 1px 7px #74d590;
+}
+.myprofile-item {
+    font-size: 14px;
+    display: inline-block;
+    width: 45%;
+    margin-right: 4%;
+    margin-bottom: 25px;
+}
+.myprofile-data {
+    padding: 20px;
+}
+.myprofile-item label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.selectbox {
+    display: inline-block;
+    width: 44%;
+    vertical-align: middle;
+}
+.grading-period {
+    font-size: 14px;
+    height: 45px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    width: 49%;
+}
+.myprofile-info h2 {
+    display: inline-block;
+    width: 55%;
+    vertical-align: middle;
+}
+.grade-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.grade-period span {
+    font-size: 14px;
+    display: block;
+    background: #74d590;
+    padding: 8px 10px;
+    color: #fff;
+    font-weight: bold;
+}
+.grade-period table {
+    font-size: 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+table thead {
+    border-top: 1px solid #fff;
+    display: block;
+    width: 100%;
+    font-size: 0;
+}
+.table-list {
+    background: #74d590;
+    padding: 10px 0;
+}
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.table-list,
+.table-body-list {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    width: 16.66%;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    height: 32px;
+}
+.table-row,
+.table-body-row {
+    display: block;
+    width: 100%;
+}
+.grade-period {
+    margin-bottom: 30px;
+}
+.print-button {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+.print-button button {
+    background: #6060ff;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #6060ff;
+    font-size: 14px;
+    display: inline-block;
+    width: 15%;
+    padding: 10px;
+}
+.feedback {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.myprofile-data-list {
+    font-size: 14px;
+}
+.myprofile-data-list label {
+    display: block;
+    margin-bottom: 10px;
+}
+.myprofile-data-list select, 
+.myprofile-data-list input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.myprofile-data-list {
+    display: block;
+    padding-bottom: 20px;
+}
+.myprofile-data-list textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+    resize: none;
+}
+.myprofile-data-list button {
+    display: inline-block;
+    width: 30%;
+    border: 1px solid #8787f5;
+    background: #8787f5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.myprofile-data-list-button {
+    display: block;
+    text-align: center;
 }
