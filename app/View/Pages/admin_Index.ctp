@@ -1,9 +1,4 @@
 <div class="content">
-  <!-- <div class="content-wrapper">
-    <div class="content-title">
-      <span>Dashboard</span>
-    </div>
-  </div> -->
   <div class="content-title-dashboard">
     <span>Dashboard</span>
   </div>

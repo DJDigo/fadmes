@@ -262,10 +262,9 @@ body {
     vertical-align: top; }
 
 .content {
-  position: absolute;
-  left: 21%;
-  top: 75px;
   width: 78%;
+  margin-left: 21%;
+  margin-top: 100px;
 }
 
 .content-wrapper {
@@ -276,6 +275,7 @@ body {
   padding: 20px;
   border-radius: 5px;
   min-height: 550px;
+  position: relative;
 }
 
 .content-title-dashboard {
@@ -384,4 +384,114 @@ body {
 
 .dashboard-student .dashboard-text {
   background: rgb(255, 0, 0);
+}
+.content-title {
+  font-weight: bold;
+}
+.search-student {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 99%;
+}
+.search-student input {
+  padding: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 30%;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: left;
+}
+.search-student select {
+  padding: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 20%;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+}
+.search-student button {
+  background: blue;
+  padding: 9px;
+  border: 1px solid blue;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  width: 10%;
+  vertical-align: middle;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.grade-period span {
+  font-size: 16px;
+  display: block;
+  background: #74d590;
+  padding: 8px 10px;
+  color: #fff;
+  font-weight: bold;
+}
+.grade-period table {
+  font-size: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead {
+  border-top: 1px solid #fff;
+  display: block;
+  width: 100%;
+  font-size: 0;
+}
+.table-list {
+  background: #74d590;
+  padding: 10px 0;
+}
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.table-list,
+.table-body-list {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 14px;
+  width: 16.66%;
+  vertical-align: top;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  height: 32px;
+}
+.table-row,
+.table-body-row {
+  display: block;
+  width: 100%;
+}
+.grade-period {
+  margin-bottom: 30px;
+}
+.print-button {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+.print-button button {
+  background: #6060ff;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #6060ff;
+  font-size: 14px;
+  display: inline-block;
+  width: 15%;
+  padding: 10px;
+}
+.grades-record {
+  margin-top: 50px;
 }

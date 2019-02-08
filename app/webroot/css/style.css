@@ -465,6 +465,7 @@ iframe {
     display: inline-block;
     width: 44%;
     vertical-align: middle;
+    text-align: right;
 }
 .grading-period {
     font-size: 14px;
