@@ -31,4 +31,39 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+    public $components = [
+        'DebugKit.Toolbar',
+        'Flash',
+        // 'Auth' => [
+        //     'loginRedirect'  => ['controller' => 'users', 'action' => 'index'],
+        //     'logoutRedirect' => ['controller' => 'users', 'action' => 'login'],
+        //     'authError'      => 'You must be logged in to view this page.',
+        //     'loginError'     => 'Invalid Username or Password entered, please try again.',
+        //     'authenticate'   => [
+        //         'Form' => [
+        //             'passwordHasher' => 'Blowfish',
+        //             'fields' => [
+        //                 'username' => 'username',
+        //                 'password' => 'password'
+        //             ]
+        //         ]
+        //     ]
+        // ],
+        'Session'
+    ];
+
+    public function beforeFilter() {
+        // $this->Auth->allow('add_files', 'add', 'edit');
+        if (empty($this->params['controller'])) {
+            return $this->redirect(['users/']);
+        }
+        $this->set('url', $this->current_url());
+    }
+
+    public function current_url() {
+        $parsed_url = parse_url($_SERVER['PHP_SELF']);
+        $path_array = explode('/', $parsed_url['path']);
+        $url = "/".$path_array[1]."/";
+        return $url;
+    }
 }
