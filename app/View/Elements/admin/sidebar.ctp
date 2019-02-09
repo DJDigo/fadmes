@@ -2,14 +2,14 @@
   <nav class="sidebar__menu">
     <ul>
       <li class="sidebar__list">
-        <a href="" class="sidebar__item sidebar__item--active">
+        <a href="/fadmes/admin/index" class="sidebar__item sidebar__item--active">
           <i class="fa fa-home sidebar__icon" aria-hidden="true"></i>
           <span class="sidebar__link-text">Dashboard</span>
           <i class="fa fa-chevron-right sidebar__icon-right" aria-hidden="true"></i>
         </a>
       </li>
       <li class="sidebar__list">
-        <a class="sidebar__item">
+        <a href="/fadmes/admin/grades" class="sidebar__item">
           <i class="fa fa-folder sidebar__icon" aria-hidden="true"></i>
           <span class="sidebar__link-text">View Grades</span>
         </a>
