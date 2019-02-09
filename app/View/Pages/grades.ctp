@@ -18,22 +18,11 @@
                     <option value="">Grade 9</option>
                     <option value="">Grade 10</option>
                 </select>
-                <select class="grading-period">
-                    <option value="">Grading Period</option>
-                    <option value="">All</option>
-                    <option value="">First</option>
-                    <option value="">Second</option>
-                    <option value="">Third</option>
-                    <option value="">Fourth</option>
-                </select>
             </div>
         </div>
         <div class="myprofile-data">
-            <div class="grade-title">
-                <span>Grade 1</span>      
-            </div>
             <div class="grade-period">
-                <span>1st Grading</span>
+                <span>Grade 1</span>
                 <table class="table">
                     <thead>
                         <tr class="table-row">
@@ -83,7 +72,7 @@
             </div>
 
             <div class="grade-period">
-                <span>2nd Grading</span>
+                <span>Grade 2</span>
                 <table class="table">
                     <thead>
                         <tr class="table-row">
@@ -133,7 +122,7 @@
             </div>
 
             <div class="grade-period">
-                <span>3rd Grading</span>
+                <span>Grade 3</span>
                 <table class="table">
                     <thead>
                         <tr class="table-row">
@@ -183,7 +172,7 @@
             </div>
 
             <div class="grade-period">
-                <span>4th Grading</span>
+                <span>Grade 4</span>
                 <table class="table">
                     <thead>
                         <tr class="table-row">

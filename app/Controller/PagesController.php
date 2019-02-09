@@ -101,4 +101,8 @@ class PagesController extends AppController {
 	public function admin_login() {
 		$this->layout = false;
 	}
+
+	public function admin_view_grades() {
+		$this->layout = 'admin';
+	}
 }

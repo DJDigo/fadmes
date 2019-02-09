@@ -24,22 +24,27 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<title>F.A. De Mesa Elementary School</title>
 	<?php
 		echo $this->Html->meta('icon');
-
 		echo $this->Html->css('aos.css');
-		echo $this->Html->css('style.css');
-
+		echo $this->Html->css('../js/datatables/datatables.min.css');
+		echo $this->Html->css('admin.css');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 		echo $this->Html->script('jquery-3.1.0.min.js');
 		echo $this->Html->script('aos.js');
-		echo $this->Html->script('javascript.js');
+		echo $this->Html->script('datatables/datatables.min.js');
+		echo $this->Html->script('chartjs.js');
+		echo $this->Html->script('chartjs-plugin-labels.min.js');
 	?>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 <body>
+	<header>
+		<?php echo $this->element('admin/header'); ?>
+	</header>
 	<main>
+		<?php echo $this->element('admin/sidebar'); ?>
         <?php echo $this->fetch('content'); ?>
-        pogi ako
 	</main>
 </body>
 </html>
