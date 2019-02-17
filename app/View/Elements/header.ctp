@@ -1,7 +1,7 @@
 <div class="header-container">
     <div class="header-logo">
         <a href="/fadmes/">
-            <img src="img/common/fadmes-logo.png" alt="F.A De Mesa Elementary School">
+            <img src="<?php echo $url ?>img/common/fadmes-logo.png" alt="F.A De Mesa Elementary School">
             <span>F.A De Mesa Elementary School</span>
         </a>
     </div>
