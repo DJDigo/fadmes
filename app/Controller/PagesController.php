@@ -105,4 +105,20 @@ class PagesController extends AppController {
 	public function admin_view_grades() {
 		$this->layout = 'admin';
 	}
+	
+	public function admin_add_student() {
+		$this->layout = 'admin';
+	}
+
+	public function admin_list_student() {
+		$this->layout = 'admin';
+	}
+
+	public function admin_list_teachers() {
+		$this->layout = 'admin';
+	}
+
+	public function admin_feedback() {
+		$this->layout = 'admin';
+	}
 }

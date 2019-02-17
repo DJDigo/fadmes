@@ -15,27 +15,15 @@
         </a>
       </li>
       <li class="sidebar__list">
-        <a class="sidebar__item">
-          <i class="fa fa-users sidebar__icon" aria-hidden="true"></i>
-          <span class="sidebar__link-text">List of Students</span>
-        </a>
-      </li>
-      <li class="sidebar__list">
-        <a class="sidebar__item">
-          <i class="fa fa-users sidebar__icon" aria-hidden="true"></i>
-          <span class="sidebar__link-text">Encode of Grades</span>
-        </a>
-      </li>
-      <li class="sidebar__list">
-        <a class="sidebar__item">
-          <i class="fa fa-chalkboard-teacher sidebar__icon" aria-hidden="true"></i>
-          <span class="sidebar__link-text">List of Teachers</span>
-        </a>
-      </li>
-      <li class="sidebar__list">
-        <a class="sidebar__item">
+        <a class="sidebar__item" href="/fadmes/admin/add_student">
           <i class="fa fa-user-plus sidebar__icon" aria-hidden="true"></i>
           <span class="sidebar__link-text">Add Student Record</span>
+        </a>
+      </li>
+      <li class="sidebar__list">
+        <a class="sidebar__item" href="/fadmes/admin/list_student">
+          <i class="fa fa-users sidebar__icon" aria-hidden="true"></i>
+          <span class="sidebar__link-text">List of Students</span>
         </a>
       </li>
       <li class="sidebar__list">
@@ -45,7 +33,19 @@
         </a>
       </li>
       <li class="sidebar__list">
-        <a href="" class="sidebar__item">
+        <a class="sidebar__item" href="/fadmes/admin/list_teachers">
+          <i class="fa fa-chalkboard-teacher sidebar__icon" aria-hidden="true"></i>
+          <span class="sidebar__link-text">List of Teachers</span>
+        </a>
+      </li>
+      <li class="sidebar__list">
+        <a class="sidebar__item">
+          <i class="fa fa-users sidebar__icon" aria-hidden="true"></i>
+          <span class="sidebar__link-text">Encode of Grades</span>
+        </a>
+      </li>
+      <li class="sidebar__list">
+        <a href="/fadmes/admin/feedback" class="sidebar__item">
           <i class="fa fa-book sidebar__icon" aria-hidden="true"></i>
           <span class="sidebar__link-text">Reviews/Feedback <small>6</small></span>
         </a>

@@ -459,13 +459,13 @@ table tbody tr:nth-child(even) {
 }
 .table-list,
 .table-body-list {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   display: inline-block;
   font-size: 14px;
-  width: 16.66%;
+  width: 16.66% !important;
   vertical-align: top;
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 8px !important;
   text-align: center;
   height: 32px;
 }
@@ -494,4 +494,46 @@ table tbody tr:nth-child(even) {
 }
 .grades-record {
   margin-top: 50px;
+}
+.table-edit {
+  display: inline-block;
+  width: 50px;
+  color: #fff;
+  background: #6060ff;
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.table-delete {
+  display: inline-block;
+  width: 50px;
+  color: #fff;
+  background: #f83737;
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 5px;
+}
+#admin-list .table-list,
+#admin-list .table-body-list {
+  border: none;
+  height: initial;
+  vertical-align: middle;
+}
+
+.dataTables_paginate span {
+  display: inline-block;
+  background: #fff;
+  font-size: 14px;
+}
+.dataTables_paginate {
+  font-size: 14px;
+}
+.dataTables_length {
+  padding: 0 0 20px;
+}
+.dataTables_length select {
+  border-radius: 4px;
+  padding: 5px;
+  display: inline-block;
 }
