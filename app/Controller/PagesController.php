@@ -121,4 +121,8 @@ class PagesController extends AppController {
 	public function admin_feedback() {
 		$this->layout = 'admin';
 	}
+	
+	public function admin_add_teacher() {
+		$this->layout = 'admin';
+	}
 }

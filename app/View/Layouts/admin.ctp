@@ -25,6 +25,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('aos.css');
+		echo $this->Html->css('bootstrap-datepicker/datepicker.css');
 		echo $this->Html->css('../js/datatables/datatables.min.css');
 		echo $this->Html->css('admin.css');
 		echo $this->fetch('meta');
@@ -32,6 +33,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->fetch('script');
 		echo $this->Html->script('jquery-3.1.0.min.js');
 		echo $this->Html->script('aos.js');
+		echo $this->Html->script('bootstrap-datepicker/datepicker.js');
 		echo $this->Html->script('datatables/datatables.min.js');
 		echo $this->Html->script('chartjs.js');
 		echo $this->Html->script('chartjs-plugin-labels.min.js');

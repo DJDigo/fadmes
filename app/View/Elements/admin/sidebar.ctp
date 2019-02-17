@@ -27,7 +27,7 @@
         </a>
       </li>
       <li class="sidebar__list">
-        <a class="sidebar__item">
+        <a class="sidebar__item" href="/fadmes/admin/add_teacher">
           <i class="fa fa-user-plus sidebar__icon" aria-hidden="true"></i>
           <span class="sidebar__link-text">Add Teacher Record</span>
         </a>

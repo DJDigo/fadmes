@@ -37,6 +37,7 @@
 	Router::connect('/admin/list_student', array('controller' => 'pages', 'action' => 'admin_list_student'));
 	Router::connect('/admin/list_teachers', array('controller' => 'pages', 'action' => 'admin_list_teachers'));
 	Router::connect('/admin/feedback', array('controller' => 'pages', 'action' => 'admin_feedback'));
+	Router::connect('/admin/add_teacher', array('controller' => 'pages', 'action' => 'admin_add_teacher'));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */

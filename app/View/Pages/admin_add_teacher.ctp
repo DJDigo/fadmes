@@ -1,7 +1,7 @@
 <div class="content">
   <div class="content-wrapper">
     <div class="content-title">
-      <span>Register Student Record</span>
+      <span>Register Teacher Record</span>
     </div>    
     <div class="grades-record">
       <div class="flash-message">Successfully added</div>
@@ -66,7 +66,7 @@
           </div>
           <div class="form-column">
             <div class="form-group">
-              <label>Guardian Name <span>*</span></label>
+              <label>Email Address <span>*</span></label>
               <input type="text">
               <span class="error-message">error message</span>
             </div>
@@ -80,7 +80,28 @@
           </div>
           <div class="form-column">
             <div class="form-group">
-              <label>Date Enrolled <span>*</span></label>
+              <label>Date Hired <span>*</span></label>
+              <input type="text" id="datepicker2">
+              <span class="error-message">error message</span>
+            </div>
+          </div>
+          <div class="form-column">
+            <div class="form-group">
+              <label>Department <span>*</span></label>
+              <input type="text" id="datepicker2">
+              <span class="error-message">error message</span>
+            </div>
+          </div>
+          <div class="form-column">
+            <div class="form-group">
+              <label>Subject Handle <span>*</span></label>
+              <input type="text" id="datepicker2">
+              <span class="error-message">error message</span>
+            </div>
+          </div>
+          <div class="form-column">
+            <div class="form-group">
+              <label>Yr/Grade Assigned <span>*</span></label>
               <input type="text" id="datepicker2">
               <span class="error-message">error message</span>
             </div>

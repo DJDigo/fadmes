@@ -537,3 +537,95 @@ table tbody tr:nth-child(even) {
   padding: 5px;
   display: inline-block;
 }
+.form-record {
+  font-size: 0;
+  padding: 0 35px;
+}
+.form-name .form-group {
+  display: inline-block;
+  width: 33.3%;
+  font-size: 14px;
+  padding: 0 0 20px;
+}
+.form-name .form-group label {
+  display: block;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.form-name .form-group input {
+  display: inline-block;
+  width: 80%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 7px;
+  margin-bottom: 5px;
+}
+.error-message {
+  display: block;
+  color: firebrick;
+}
+.form-column {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  margin-right: 2%;
+  margin-bottom: 15px;
+}
+.form-column:nth-child(2n) {
+  margin-right: 0;
+}
+.form-column .form-group label {
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.form-column .form-group input {
+  display: inline-block;
+  width: 93%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 7px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+.error-message {
+  display: block;
+  font-size: 14px;
+  color: firebrick;
+}
+.form-column select {
+  display: inline-block;
+  width: 93%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 7px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+.form-group label span {
+  color: #f00;
+  font-weight: bold;
+  font-size: 18px;
+}
+.datepicker-days table thead{
+  font-size: 14px;
+  display: initial;
+}
+.table-condensed {
+  display: inherit;
+}
+.flash-message {
+  padding: 15px;
+  border-radius: 5px;
+  background: #21a521;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.flash-message-error {
+  padding: 15px;
+  border-radius: 5px;
+  background: #ff3e30;
+  color: #fff;
+  margin-bottom: 25px;
+}
