@@ -2,7 +2,7 @@
   <div class="header__content">
     <div class="header__company-name">
       <h1>
-        <img src="../img/common/fadmes-logo.png" alt="FADMES logo">
+        <img src="<?php echo $url ?>img/common/fadmes-logo.png" alt="FADMES logo">
         <span>F.A De Mesa Elementary School</span>
       </h1>
     </div>
@@ -10,7 +10,7 @@
       <a href="" class="header__control-link">
         <span>Welcome Admin!</span>
       </a>
-      <a href="" class="header__control-link">
+      <a href="<?php echo $url . 'users/logout' ?>" class="header__control-link">
         <span>Logout</span>
       </a>
     </div>

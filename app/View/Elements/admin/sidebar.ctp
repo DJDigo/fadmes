@@ -15,25 +15,25 @@
         </a>
       </li>
       <li class="sidebar__list">
-        <a class="sidebar__item" href="/fadmes/admin/add_student">
+        <a class="sidebar__item" href="<?php echo $url . "students/add" ?>">
           <i class="fa fa-user-plus sidebar__icon" aria-hidden="true"></i>
           <span class="sidebar__link-text">Add Student Record</span>
         </a>
       </li>
       <li class="sidebar__list">
-        <a class="sidebar__item" href="/fadmes/admin/list_student">
+        <a class="sidebar__item" href="<?php echo $url . "students/index" ?>">
           <i class="fa fa-users sidebar__icon" aria-hidden="true"></i>
           <span class="sidebar__link-text">List of Students</span>
         </a>
       </li>
       <li class="sidebar__list">
-        <a class="sidebar__item" href="/fadmes/admin/add_teacher">
+        <a class="sidebar__item" href="<?php echo $url . "faculties/add" ?>">
           <i class="fa fa-user-plus sidebar__icon" aria-hidden="true"></i>
           <span class="sidebar__link-text">Add Teacher Record</span>
         </a>
       </li>
       <li class="sidebar__list">
-        <a class="sidebar__item" href="/fadmes/admin/list_teachers">
+        <a class="sidebar__item" href="<?php echo $url . "faculties/index" ?>">
           <i class="fa fa-chalkboard-teacher sidebar__icon" aria-hidden="true"></i>
           <span class="sidebar__link-text">List of Teachers</span>
         </a>

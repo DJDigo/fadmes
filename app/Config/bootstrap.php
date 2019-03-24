@@ -89,8 +89,8 @@ CakePlugin::load('DebugKit');
  * ));
  */
 Configure::write('Dispatcher.filters', array(
-	'AssetDispatcher',
-	'CacheDispatcher'
+    'AssetDispatcher',
+    'CacheDispatcher'
 ));
 
 /**
@@ -98,12 +98,38 @@ Configure::write('Dispatcher.filters', array(
  */
 App::uses('CakeLog', 'Log');
 CakeLog::config('debug', array(
-	'engine' => 'File',
-	'types' => array('notice', 'info', 'debug'),
-	'file' => 'debug',
+    'engine' => 'File',
+    'types' => array('notice', 'info', 'debug'),
+    'file' => 'debug',
 ));
 CakeLog::config('error', array(
-	'engine' => 'File',
-	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
-	'file' => 'error',
+    'engine' => 'File',
+    'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
+    'file' => 'error',
 ));
+
+Configure::write('SUBJECTS', [
+    1 => 'MAPEH',
+    2 => 'Science',
+    3 => 'Filipino',
+    4 => 'English', 
+    5 => 'Math'
+]);
+
+Configure::write('STATUS', [
+    1 => 'Active',
+    2 => 'Graduate'
+]);
+
+Configure::write('GRADE', [
+    1 => 'Grade 1',
+    2 => 'Grade 2',
+    3 => 'Grade 3',
+    4 => 'Grade 4', 
+    5 => 'Grade 5',
+    6 => 'Grade 6',
+    7 => 'Grade 7',
+    8 => 'Grade 8',
+    9 => 'Grade 9', 
+    10 => 'Grade 10'
+]);

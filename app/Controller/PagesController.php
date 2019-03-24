@@ -35,7 +35,7 @@ class PagesController extends AppController {
  *
  * @var array
  */
-	public $uses = array();
+    public $uses = array();
 
 /**
  * Displays a view
@@ -44,85 +44,85 @@ class PagesController extends AppController {
  * @throws NotFoundException When the view file could not be found
  *	or MissingViewException in debug mode.
  */
-	public function display() {
-		$path = func_get_args();
+    public function display() {
+        $path = func_get_args();
 
-		$count = count($path);
-		if (!$count) {
-			return $this->redirect('/');
-		}
-		$page = $subpage = $title_for_layout = null;
+        $count = count($path);
+        if (!$count) {
+            return $this->redirect('/');
+        }
+        $page = $subpage = $title_for_layout = null;
 
-		if (!empty($path[0])) {
-			$page = $path[0];
-		}
-		if (!empty($path[1])) {
-			$subpage = $path[1];
-		}
-		if (!empty($path[$count - 1])) {
-			$title_for_layout = Inflector::humanize($path[$count - 1]);
-		}
-		$this->set(compact('page', 'subpage', 'title_for_layout'));
+        if (!empty($path[0])) {
+            $page = $path[0];
+        }
+        if (!empty($path[1])) {
+            $subpage = $path[1];
+        }
+        if (!empty($path[$count - 1])) {
+            $title_for_layout = Inflector::humanize($path[$count - 1]);
+        }
+        $this->set(compact('page', 'subpage', 'title_for_layout'));
 
-		try {
-			$this->render(implode('/', $path));
-		} catch (MissingViewException $e) {
-			if (Configure::read('debug')) {
-				throw $e;
-			}
-			throw new NotFoundException();
-		}
-	}
-	
-	public function index() {
+        try {
+            $this->render(implode('/', $path));
+        } catch (MissingViewException $e) {
+            if (Configure::read('debug')) {
+                throw $e;
+            }
+            throw new NotFoundException();
+        }
+    }
+    
+    public function index() {
 
-	}
+    }
 
-	public function login() {
+    public function login() {
 
-	}
+    }
 
-	public function myprofile() {
+    public function myprofile() {
 
-	}
-	
-	public function grades() {
+    }
+    
+    public function grades() {
 
-	}
+    }
 
-	public function feedback() {
+    public function feedback() {
 
-	}
+    }
 
-	public function admin_index() {
-		$this->layout = 'admin';
-	}
-	
-	public function admin_login() {
-		$this->layout = false;
-	}
+    public function admin_index() {
+        $this->layout = 'admin';
+    }
+    
+    public function admin_login() {
+        $this->layout = false;
+    }
 
-	public function admin_view_grades() {
-		$this->layout = 'admin';
-	}
-	
-	public function admin_add_student() {
-		$this->layout = 'admin';
-	}
+    public function admin_view_grades() {
+        $this->layout = 'admin';
+    }
+    
+    public function admin_add_student() {
+        $this->layout = 'admin';
+    }
 
-	public function admin_list_student() {
-		$this->layout = 'admin';
-	}
+    public function admin_list_student() {
+        $this->layout = 'admin';
+    }
 
-	public function admin_list_teachers() {
-		$this->layout = 'admin';
-	}
+    public function admin_list_teachers() {
+        $this->layout = 'admin';
+    }
 
-	public function admin_feedback() {
-		$this->layout = 'admin';
-	}
-	
-	public function admin_add_teacher() {
-		$this->layout = 'admin';
-	}
+    public function admin_feedback() {
+        $this->layout = 'admin';
+    }
+    
+    public function admin_add_teacher() {
+        $this->layout = 'admin';
+    }
 }

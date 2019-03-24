@@ -34,30 +34,31 @@ class AppController extends Controller {
     public $components = [
         'DebugKit.Toolbar',
         'Flash',
-        // 'Auth' => [
-        //     'loginRedirect'  => ['controller' => 'users', 'action' => 'index'],
-        //     'logoutRedirect' => ['controller' => 'users', 'action' => 'login'],
-        //     'authError'      => 'You must be logged in to view this page.',
-        //     'loginError'     => 'Invalid Username or Password entered, please try again.',
-        //     'authenticate'   => [
-        //         'Form' => [
-        //             'passwordHasher' => 'Blowfish',
-        //             'fields' => [
-        //                 'username' => 'username',
-        //                 'password' => 'password'
-        //             ]
-        //         ]
-        //     ]
-        // ],
+        'Auth' => [
+            'loginRedirect'  => ['controller' => 'users', 'action' => 'index'],
+            'logoutRedirect' => ['controller' => 'users', 'action' => 'login'],
+            'authError'      => 'You must be logged in to view this page.',
+            'loginError'     => 'Invalid Username or Password entered, please try again.',
+            'authenticate'   => [
+                'Form' => [
+                    'passwordHasher' => 'Blowfish',
+                    'fields' => [
+                        'username' => 'username',
+                        'password' => 'password'
+                    ]
+                ]
+            ]
+        ],
         'Session'
     ];
 
     public function beforeFilter() {
-        // $this->Auth->allow('add_files', 'add', 'edit');
         if (empty($this->params['controller'])) {
             return $this->redirect(['users/']);
         }
+        
         $this->set('url', $this->current_url());
+        $this->Auth->allow('login');
     }
 
     public function current_url() {
