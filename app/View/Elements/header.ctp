@@ -14,11 +14,17 @@
             <li class="navigation-item" data-id="about-us">About Us</li>
             <li class="navigation-item" data-id="contact-us">Contact Us</li>
             <li class="navigation-item">
-                <a class="myprofile" href="/fadmes/myprofile">My Profile</a>
+                <a class="myprofile" href="<?php echo $url ?>students/profile">My Profile</a>
             </li>
+            <?php if($this->Session->check('Auth.Student')): ?>
             <li class="navigation-item">
-                <a class="login-button" href="/fadmes/login">Login</a>
+                <a class="login-button" href="<?php echo $url ?>students/login">Login</a>
             </li>
+            <?php else: ?>
+            <li class="navigation-item">
+                <a class="login-button" href="<?php echo $url ?>users/logout">Logout</a>
+            </li>
+            <?php endif; ?>
         </ul>
     </nav>
 </div>

@@ -133,3 +133,8 @@ Configure::write('GRADE', [
     9 => 'Grade 9', 
     10 => 'Grade 10'
 ]);
+
+Configure::write('GENDER', [
+    1 => 'Male',
+    2 => 'Female'
+]);

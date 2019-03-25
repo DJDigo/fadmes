@@ -57,6 +57,7 @@ class UsersController extends AppController {
 
             if (!empty($user)) {
                 $this->Session->write('Auth', $user);
+                return $this->redirect(['controller' => 'users', 'action' => 'index']);
             } else {
                 $this->Flash->error('Invalid username or password.');
             }
@@ -68,6 +69,13 @@ class UsersController extends AppController {
     public function logout() {
         $this->autoRender = false;
         $this->Session->destroy();
+        return $this->redirect(['controller' => 'users', 'action' => 'login']);
+    }
+    /**
+     * Dashboard
+     */
+    public function index() {
+        $this->layout = "admin";
     }
 
 }

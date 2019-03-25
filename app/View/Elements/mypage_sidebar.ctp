@@ -1,7 +1,7 @@
 <aside class="sidebar">
     <div class="sidebar-content">
         <div class="sidebar-image">
-            <img src="./img/common/fadmes-logo.png" class="profile-image">
+            <img src="<?php echo $url; ?>img/common/fadmes-logo.png" class="profile-image">
             <span class="profile-name">Daryll James Pogi Digo</span>
         </div>
         <nav class="sidebar-menu">

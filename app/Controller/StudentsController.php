@@ -116,11 +116,25 @@ class StudentsController extends AppController {
             if (!empty($user)) {
                 if ($this->Auth->login($user['Student'])) {
                     AuthComponent::$sessionKey = 'Auth.Student';
+                    return $this->redirect(['controller' => 'students', 'action' => 'profile']);
                 }
-                // $this->Session->write('Auth', $user);
             } else {
                 $this->Flash->error('Invalid Student ID or Password.');
             }
+        }
+    }
+    /**
+     * My profile
+     */
+    public function profile() {
+        if ($this->Session->check('Auth')) {
+            $student = $this->Student->find('first', [
+                'conditions' => [
+                    'Student.id' => $this->Session->read('Auth.User.id'),
+                    'Student.deleted_date' => NULL
+                ]
+            ]);
+            $this->set(compact('student'));
         }
     }
 }
