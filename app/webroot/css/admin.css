@@ -629,3 +629,15 @@ table tbody tr:nth-child(even) {
   color: #fff;
   margin-bottom: 25px;
 }
+.table-input {
+  width: 75%;
+  padding: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.table--encode td {
+  padding: 3px 0 !important;
+  height: 36px;
+}

@@ -125,4 +125,8 @@ class PagesController extends AppController {
     public function admin_add_teacher() {
         $this->layout = 'admin';
     }
+
+    public function admin_encode_grades() {
+        $this->layout = 'admin';
+    }
 }

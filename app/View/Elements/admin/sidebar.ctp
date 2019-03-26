@@ -39,7 +39,7 @@
         </a>
       </li>
       <li class="sidebar__list">
-        <a class="sidebar__item">
+        <a class="sidebar__item" href="/fadmes/pages/admin_encode_grades">
           <i class="fa fa-users sidebar__icon" aria-hidden="true"></i>
           <span class="sidebar__link-text">Encode of Grades</span>
         </a>
