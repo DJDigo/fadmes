@@ -2,14 +2,14 @@
   <div class="content-wrapper">
     <div class="content-title">
       <span>Register Teacher Record</span>
-    </div>    
+    </div>
     <div class="grades-record">
     <?php echo $this->Flash->render(); ?>
       <!-- <div class="flash-message">Successfully added</div>
       <div class="flash-message-error">Failed to add</div> -->
       <form method="post">
         <div class="form-record">
-          <div class="form-name"> 
+          <div class="form-name">
             <div class="form-group">
               <label>First Name <span>*</span></label>
               <input type="text" name="firstname" value="<?php echo !empty($this->request->data['firstname']) ? : '' ?>">
@@ -114,13 +114,15 @@
               <span class="error-message"><?php echo $this->Form->error('Faculty.password') ?></span>
             </div>
           </div>
-          <div class="form-column">
+          <div style="display: block;">
             <div class="form-group">
-              <label>Subject <span>*</span></label>
-              <div style="display:inline-block">
+              <label style="font-size: 14px;">Subject <span>*</span></label>
+              <div style="display:block; padding-bottom:15px">
               <?php foreach($subjects as $key => $value): ?>
-                <input type="checkbox" name="subject[]" value="<?php echo $key ?>" <?php echo isset($this->request->data['subject'][$key]) ? 'checked' : '' ?>><label><?php echo $value; ?></label>
-              <?php endforeach; ?>
+							<div style="display: inline-block; width: 150px; vertical-align: middle; font-size: 14px;">
+								<input type="checkbox" name="subject[]" value="<?php echo $key ?>" <?php echo isset($this->request->data['subject'][$key]) ? 'checked' : '' ?>><label><?php echo $value; ?></label>
+							</div>
+							<?php endforeach; ?>
                 </div>
               <span class="error-message"><?php echo $this->Form->error('Faculty.subject') ?></span>
             </div>
