@@ -351,4 +351,82 @@ class AppSchema extends CakeSchema {
         ],
         'tableParameters' => ['charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB']
     ];
+
+    public $grades = [
+        'id' => [
+            'type'     => 'integer', 
+            'null'     => false, 
+            'default'  => null, 
+            'unsigned' => false, 
+            'key'      => 'primary'
+        ],
+        'deleted_date' => [
+            'type'    => 'datetime', 
+            'null'    => true, 
+            'default' => null
+        ],
+        'student_id' => [
+            'type'     => 'integer', 
+            'null'     => false, 
+            'unsigned' => false
+        ],
+        'first' => [
+            'type'     => 'integer', 
+            'null'     => true, 
+            'default'  => 0, 
+            'unsigned' => false
+        ],
+        'second' => [
+            'type'     => 'integer', 
+            'null'     => true, 
+            'default'  => 0, 
+            'unsigned' => false
+        ],
+        'third' => [
+            'type'     => 'integer', 
+            'null'     => true, 
+            'default'  => 0, 
+            'unsigned' => false
+        ],
+        'fourth' => [
+            'type'     => 'integer', 
+            'null'     => true, 
+            'default'  => 0, 
+            'unsigned' => false
+        ],
+        'final' => [
+            'type'     => 'integer', 
+            'null'     => true, 
+            'default'  => 0, 
+            'unsigned' => false
+        ],
+        'grade_id' => [
+            'type'     => 'integer', 
+            'null'     => false, 
+            'default'  => 0, 
+            'unsigned' => false
+        ],
+        'subject_id' => [
+            'type'     => 'integer', 
+            'null'     => true, 
+            'default'  => 0, 
+            'unsigned' => false
+        ],
+        'created' => [
+            'type'    => 'datetime', 
+            'null'    => true, 
+            'default' => null,
+            'comment' =>'Created Date'
+        ],
+        'modified' => [
+            'type'    => 'datetime', 
+            'null'    => true, 
+            'default' => null,
+            'comment' =>'Modified Date'
+        ],
+        'indexes' => [
+            'PRIMARY' => ['column' => 'id', 'unique' => 1],
+        ],
+        'tableParameters' => ['charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB']
+    ];
 }

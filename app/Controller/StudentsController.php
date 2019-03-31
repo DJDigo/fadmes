@@ -114,8 +114,9 @@ class StudentsController extends AppController {
             ]);
             unset($user['Student']['password']);
             if (!empty($user)) {
+                AuthComponent::$sessionKey = 'Auth.Student';
                 if ($this->Auth->login($user['Student'])) {
-                    AuthComponent::$sessionKey = 'Auth.Student';
+                    $this->Session->write('Auth.User', $user['Student']);
                     return $this->redirect(['controller' => 'students', 'action' => 'profile']);
                 }
             } else {
@@ -136,5 +137,34 @@ class StudentsController extends AppController {
             ]);
             $this->set(compact('student'));
         }
+    }
+
+    public function my_grades() {
+        $this->Grade = ClassRegistry::init('Grade');
+
+        $grades = $this->Grade->find('all', [
+            'conditions' => [
+                'Grade.student_id' => $this->Session->read('Auth.User.id')
+            ]
+        ]);
+        $this->set('grades', $this->__construct_array($grades));
+        $subjects = Configure::read('SUBJECTS');
+        $this->set(compact('subjects'));
+        // $this->set(compact('grades'));
+    }
+
+    private function __construct_array($grades) {
+        $new_array = [];
+        $exists = [];
+        foreach ($grades as $key => $value) {
+            if (!in_array($value['Grade']['grade_id'], $exists)) {
+                $exists[] = $value['Grade']['grade_id'];
+                $new_array[$value['Grade']['grade_id']][] = $value['Grade'];
+            } else {
+                // $exists[] = $value['Grade']['subject_id'];
+                $new_array[$value['Grade']['grade_id']][] = $value['Grade'];
+            }
+        }
+        return $new_array;
     }
 }

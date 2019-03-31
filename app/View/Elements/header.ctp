@@ -16,7 +16,7 @@
             <li class="navigation-item">
                 <a class="myprofile" href="<?php echo $url ?>students/profile">My Profile</a>
             </li>
-            <?php if($this->Session->check('Auth.Student')): ?>
+            <?php if(!$this->Session->check('Auth.Student')): ?>
             <li class="navigation-item">
                 <a class="login-button" href="<?php echo $url ?>students/login">Login</a>
             </li>

@@ -6,26 +6,26 @@
   <div class="dashboard-list-horizontal">
     <div class="dashboard-list dashboard-student">
       <i class="fa fa-users dashboard-icon" aria-hidden="true"></i>
-      <span class="dashboard-count">2</span>
+      <span class="dashboard-count"><?php echo !empty($student_count) ? $student_count : 0 ?></span>
       <span class="dashboard-text">Number of Student</span>
     </div>
     <div class="dashboard-list dashboard-teacher">
       <i class="fa fa-users dashboard-icon" aria-hidden="true"></i>
-      <span class="dashboard-count">2</span>
+      <span class="dashboard-count"><?php echo !empty($_count) ? $_count : 0 ?></span>
       <span class="dashboard-text">Number of Teacher</span>
     </div>
-    <div class="dashboard-list dashboard-reviews">
+    <!-- <div class="dashboard-list dashboard-reviews">
       <i class="fa fa-users dashboard-icon" aria-hidden="true"></i>
       <span class="dashboard-count">2</span>
       <span class="dashboard-text">Reviews</span>
-    </div>
+    </div> -->
   </div>
 
   <div class="dashboard-list-chart">
     <canvas id="bar-graph"></canvas>
   </div>
   
-  <div class="dashboard-list-vertical">
+  <!-- <div class="dashboard-list-vertical">
     <div class="dashboard-list dashboard-transferees">
       <i class="fa fa-users dashboard-icon" aria-hidden="true"></i>
       <span class="dashboard-count">2</span>
@@ -37,7 +37,7 @@
       <span class="dashboard-count">2</span>
       <span class="dashboard-text">Number of Dropout</span>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <script>
@@ -51,7 +51,7 @@
     };
 
     var barChartData = {
-            labels: ['0', '1', '2', '3', '4'],
+            labels: ['MAPEH', 'SCIENCE', 'FILIPINO', 'ENGLISH', 'MATH'],
             datasets: [{
                 label: ' ',
                 backgroundColor: [
@@ -62,7 +62,13 @@
           window.chartColors.violet
         ],
                 borderWidth: 1,
-                data: [20, 40, 60, 80, 100],
+                data: [
+                  <?php echo $mapeh ?>,
+                  <?php echo $science ?>,
+                  <?php echo $filipino ?>,
+                  <?php echo $english ?>,
+                  <?php echo $math ?>
+                ],
             }]
         };
     

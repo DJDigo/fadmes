@@ -5,7 +5,7 @@ App::uses('AppModel', 'Model');
  *
  */
 class User extends AppModel {
-
+    public $useTable = 'users';
     /**
      * Hash password before saved.
      */

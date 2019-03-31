@@ -73,7 +73,10 @@ class PagesController extends AppController {
             throw new NotFoundException();
         }
     }
-    
+    public function beforeFilter() {
+        parent::beforeFilter();
+        $this->Auth->allow('index');
+    }
     public function index() {
 
     }
