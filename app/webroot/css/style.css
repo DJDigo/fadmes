@@ -595,3 +595,22 @@ table tbody tr:nth-child(even) {
     display: block;
     text-align: center;
 }
+.textarea-wrapper {
+    padding: 20px 0;
+}
+
+.textarea-wrapper label {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+.textarea-wrapper p {
+    background: #eee;
+    display: block;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}

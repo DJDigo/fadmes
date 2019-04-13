@@ -56,6 +56,10 @@
                     <?php endif; ?>
                 </tbody>
             </table>
+            <div class="textarea-wrapper">
+                <label>Suggestions/Recommendations</label>
+                <textarea>ako pogi pogi ako sagooot!</textarea>
+            </div>
             <div class="print-button">
                 <button>Save</button>
             </div>

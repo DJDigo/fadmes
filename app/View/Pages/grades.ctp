@@ -69,6 +69,10 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="textarea-wrapper">
+                    <label>Suggestions/Recommendations</label>
+                    <p>ako pogi pogi ako sagooot!</p>
+                </div>
             </div>
 
             <div class="grade-period">
@@ -119,6 +123,10 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="textarea-wrapper">
+                    <label>Suggestions/Recommendations</label>
+                    <p>ako pogi pogi ako sagooot!</p>
+                </div>
             </div>
 
             <div class="grade-period">
@@ -169,6 +177,10 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="textarea-wrapper">
+                    <label>Suggestions/Recommendations</label>
+                    <p>ako pogi pogi ako sagooot!</p>
+                </div>
             </div>
 
             <div class="grade-period">
@@ -219,6 +231,10 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="textarea-wrapper">
+                    <label>Suggestions/Recommendations</label>
+                    <p>ako pogi pogi ako sagooot!</p>
+                </div>
             </div>
 
             <div class="print-button">

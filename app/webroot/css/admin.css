@@ -641,3 +641,31 @@ table tbody tr:nth-child(even) {
   padding: 3px 0 !important;
   height: 36px;
 }
+.textarea-wrapper {
+  padding: 20px 0;
+}
+
+.textarea-wrapper textarea {
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  resize: none;
+  height: 110px;
+  width: 100%;
+  padding: 5px;
+}
+
+.textarea-wrapper label {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+
+.textarea-wrapper p {
+  background: #eee;
+  display: block;
+  padding: 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
