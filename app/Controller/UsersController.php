@@ -26,7 +26,7 @@ class UsersController extends AppController {
 
     public function add () {
         $this->autoRender = false;
-        
+
         $user['User'] = [
             'username' => 'admin',
             'password' => 'admin'
@@ -101,7 +101,7 @@ class UsersController extends AppController {
                 'Faculty.deleted_date' => NULL
             ]
         ]);
-        
+
         // $this->Student->bindModel(
         //     array('hasMany' => array(
         //             'Grade' => array(
@@ -112,7 +112,7 @@ class UsersController extends AppController {
         // );
         // $conditions[] = 'Grade IS NOT NULL';
         // $conditions['Student.deleted_date'] = NULL;
-       
+
         // $students = $this->Student->find('all', [
         //     'conditions' => $conditions
         // ]);
@@ -124,7 +124,7 @@ class UsersController extends AppController {
         $english = $this->__get_percentage(4, $grades);
         $math = $this->__get_percentage(5, $grades);
         $this->set(compact(
-            'student_count', 
+            'student_count',
             'faculty_count',
             'mapeh',
             'science',
@@ -200,7 +200,7 @@ class UsersController extends AppController {
                                 ])
                 ];
             }
-            
+
             if ($this->Grade->saveMany($array_data)) {
                 $this->Flash->success('Successfully added grade.');
                 return $this->redirect(['controller' => 'users', 'action' => 'add_grades']);
@@ -241,7 +241,7 @@ class UsersController extends AppController {
         }
         $conditions[] = 'Grade IS NOT NULL';
         $conditions['Student.deleted_date'] = NULL;
-       
+
         $students = $this->Student->find('all', [
             'conditions' => $conditions
         ]);

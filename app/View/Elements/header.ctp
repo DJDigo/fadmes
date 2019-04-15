@@ -22,7 +22,7 @@
             </li>
             <?php else: ?>
             <li class="navigation-item">
-                <a class="login-button" href="<?php echo $url ?>users/logout">Logout</a>
+                <a class="login-button" href="<?php echo $url ?>students/logout">Logout</a>
             </li>
             <?php endif; ?>
         </ul>

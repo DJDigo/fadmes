@@ -93,7 +93,7 @@ class StudentsController extends AppController {
                 if ($this->Student->save($data)) {
                     $this->Flash->success('Student has been successfully saved.');
                     return $this->redirect(['controller' => 'students', 'action' => 'edit/'.$id]);
-                } 
+                }
             } else {
                 $this->Flash->error('Student has been failed to saved.');
             }
@@ -166,5 +166,13 @@ class StudentsController extends AppController {
             }
         }
         return $new_array;
+	}
+	/**
+     * users logout
+     */
+    public function logout() {
+        $this->autoRender = false;
+        $this->Session->destroy();
+        return $this->redirect(['controller' => 'users', 'action' => 'login']);
     }
 }
