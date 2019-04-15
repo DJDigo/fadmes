@@ -40,6 +40,14 @@ class AppSchema extends CakeSchema {
             'charset' => 'utf8', 
             'comment' =>'Lastname'
         ],
+        'suggestion' => [
+            'type'    => 'string', 
+            'null'    => false, 
+            'default' => null, 
+            'collate' => 'utf8_general_ci', 
+            'charset' => 'utf8', 
+            'comment' =>'Suggestion'
+        ],
         'student_id' => [
             'type'     => 'biginteger', 
             'null'     => false, 

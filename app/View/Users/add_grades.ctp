@@ -58,7 +58,7 @@
             </table>
             <div class="textarea-wrapper">
                 <label>Suggestions/Recommendations</label>
-                <textarea>ako pogi pogi ako sagooot!</textarea>
+                <textarea name="suggestion"><?php echo !empty($students['Student']['suggestion']) ? $students['Student']['suggestion'] : ''  ?></textarea>
             </div>
             <div class="print-button">
                 <button>Save</button>

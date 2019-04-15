@@ -68,10 +68,10 @@
             </tr> -->
           </tbody>
         </table>
-        <div class="textarea-wrapper">
+        <!-- <div class="textarea-wrapper">
             <label>Suggestions/Recommendations</label>
             <p>ako pogi pogi ako sagooot!</p>
-        </div>
+        </div> -->
       </div>
       <?php endforeach; ?>
       <!-- <div class="grade-period">

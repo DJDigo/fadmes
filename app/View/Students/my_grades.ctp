@@ -49,6 +49,10 @@
                         <?php endforeach; ?>
                     </tbody>
                 </table>
+                <div class="textarea-wrapper">
+                    <label>Suggestions/Recommendations</label>
+                    <p><?php echo !empty($this->Session->read('Auth.Student.suggestion')) ? $this->Session->read('Auth.Student.suggestion') : '' ; ?></p>
+                </div>
             </div>
             <?php endforeach; ?>
             <div class="print-button">

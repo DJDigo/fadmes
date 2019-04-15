@@ -203,6 +203,9 @@ class UsersController extends AppController {
 
             if ($this->Grade->saveMany($array_data)) {
                 $this->Flash->success('Successfully added grade.');
+                $this->Student = ClassRegistry::init('Student');
+                $this->Student->id = $students['Student']['id'];
+                $this->Student->saveField('suggestion', $data['suggestion']);
                 return $this->redirect(['controller' => 'users', 'action' => 'add_grades']);
             } else {
                 $this->Flash->error('Has been failed to saved.');
